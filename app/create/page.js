@@ -2,7 +2,7 @@ import HomeLink from "@/components/HomeLink";
 
 const Page = () => {
     return (
-        <div className="p-24 text-3xl">
+        <div className="p-24 text-3xl max-sm:text-xl max-sm:p-10">
             <HomeLink />
             <br></br><br></br>
             <h1 className="text-5xl">Still & Moving Design</h1>

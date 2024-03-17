@@ -1,6 +1,5 @@
 import HomeLink from "@/components/HomeLink";
 import ScrambledText from "@/components/ScrambledText";
-import Link from "next/link";
 
 const Page = () => {
     {/* 
@@ -75,7 +74,7 @@ const Page = () => {
             "categories": ["HTML, CSS, Javascript", "Web scraping", "Non-Fungible Tokens"],
         },
         {
-            "name": "GamePigeon Filler Board Solver",
+            "name": "GamePigeon Filler Board Game Solver",
             "start_month": 1,
             "end_month": 2,
             "year": 2022,
@@ -87,14 +86,14 @@ const Page = () => {
     const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
     return (
-        <div className="p-24 text-3xl">
+        <div className="p-24 text-3xl max-sm:text-xl max-sm:p-10">
             <HomeLink />
             <br></br><br></br>
             <h1 className="text-5xl">Projects</h1>
             <br></br>
             <div className="flex flex-col gap-8">
                 {projectObjects.map((project, index) => (
-                    <div key={index} className="flex gap-10">
+                    <div key={index} className="flex gap-10 max-sm:flex-col max-sm:gap-2">
                         <p className="font-bold">{projectObjects.length - index - 1 < 10 ? 0 : ""}{projectObjects.length - index - 1}</p>
                         <div className="flex flex-col gap-4">
                             <p className=" w-80">{project.name}</p>
@@ -102,7 +101,7 @@ const Page = () => {
                         </div>
                         <div className="flex flex-col gap-4">
                             <p>{project.description}</p>
-                            <div className="flex text-xl gap-4">
+                            <div className="flex text-xl gap-4 max-sm:text-sm max-sm:flex-wrap">
                                 {project.categories.map((tag, index) => (
                                     <div key={index} className="border-2 border-black p-2 text-nowrap">{tag}</div>
                                 ))}
