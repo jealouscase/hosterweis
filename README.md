@@ -1,3 +1,1 @@
-## Getting Started
-
-Welcome to my personal site.
+## Welcome to my personal site.
