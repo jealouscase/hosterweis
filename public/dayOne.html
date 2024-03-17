@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <style>
+            body {
+                position: relative;
+            }
+            #wrapper {
+                position: absolute;
+            }
+            #input-box {
+                border: 1px solid gray;
+                height: 60px;
+                width: 160px;
+                border-radius: 5px;
+                background: none;
+                padding-left: 10px;
+                font-size: large;
+            }
+            #username {
+                font-family: Arial, Helvetica, sans-serif;
+                color: rgb(89, 89, 89);
+                position: absolute;
+                margin: 0;
+                font-size: larger;
+                top: 50%;
+                transform: translateY(-50%);
+                background: #fff;
+                left: 10px;
+                padding: 2px;
+                z-index: -1;
+            }
+            #input-box:hover {
+                border: 1px solid black;
+            }
+            @keyframes moveText {
+                from {
+                    top: 50%;
+                    font-size: larger;
+                    z-index: -1;
+                }
+                to {
+                    top: 0;
+                    font-size: small;
+                    z-index: 1;
+                }
+            }
+            
+            @keyframes reverseMoveText {
+                from {
+                    top: 0;
+                    font-size: small;
+                    z-index: 1;
+                }
+                to {
+                    top: 50%;
+                    font-size: larger;
+                    z-index: -1;
+                }
+            }
+            .animate-username {
+                animation: moveText 100ms linear forwards;
+            }
+            .reverse-animate-username {
+                animation: reverseMoveText 100ms ease-in-out forwards;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="wrapper">
+            <input id="input-box" />
+            <p id="username">Username</p>
+        </div>
+        <script defer>
+            const username = document.getElementById("username")
+            const inputBox = document.getElementById("input-box")
+
+            inputBox.addEventListener("focusin", () => {
+                username.classList.add("animate-username")
+                username.classList.remove("reverse-animate-username")
+                username.style.color = "rgb(20, 51, 255)"
+            });
+
+            inputBox.addEventListener("focusout", () => {
+                if (inputBox.value.trim() == "") {
+                    username.classList.remove("animate-username")
+                    username.classList.add("reverse-animate-username")
+                }
+                username.style.color = "rgb(89, 89, 89)"
+            })
+        </script>
+    </body>
+</html>
