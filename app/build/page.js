@@ -47,7 +47,7 @@ const Page = () => {
                 ))}
             </div>
             <br></br><br></br>
-            <p>Need work done? Reach out at henryosterweis@gmail.com</p>
+            <p>Need software work done? Reach out at henryosterweis@gmail.com</p>
         </div>
     );
 }

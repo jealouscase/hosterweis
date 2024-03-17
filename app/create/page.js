@@ -9,7 +9,7 @@ const Page = () => {
             <br></br>
 
             <br></br><br></br>
-            <p>Need work done? Reach out at henryosterweis@gmail.com</p>
+            <p>Need design work done? Reach out at henryosterweis@gmail.com</p>
         </div>
     );
 }
