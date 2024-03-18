@@ -1,8 +1,6 @@
 "use client"
 import HomeLink from "@/components/HomeLink";
-import PageWrapper from "@/components/PageWrapper";
 import Image from "next/image";
-import Link from "next/link";
 import { useState } from "react";
 
 const Page = () => {
@@ -12,7 +10,7 @@ const Page = () => {
         //     "concepts": "",
         //     "statement": "",
         //     "dateCompleted": "",
-        //     "technologies": 0,
+        //     "tools": [""],
         //      "imgLinks": []
         // },
         {
@@ -20,7 +18,7 @@ const Page = () => {
             "concepts": "Montage, rhythm, & short clips",
             "statement": "",
             "dateCompleted": "050223",
-            "technologies": 0,
+            "tools": [""],
             "imgLinks": []
         },
         {
@@ -28,7 +26,7 @@ const Page = () => {
             "concepts": "Continuity editing & Post production",
             "statement": "",
             "dateCompleted": "041123",
-            "technologies": 0,
+            "tools": [""],
             "imgLinks": []
         },
         {
@@ -36,15 +34,15 @@ const Page = () => {
             "concepts": "Narrative film & Photography",
             "statement": "",
             "dateCompleted": "030223",
-            "technologies": 0,
+            "tools": [""],
             "imgLinks": []
         },
         {
             "title": "Chronophotography",
             "concepts": "Photo manipulation & Composite images",
-            "statement": "Statement",
+            "statement": "Embracing the art of chronophotography, this project blends Victorian-era techniques with modern digital tools. I explored movement in single frames, mastering composition, photography, and Adobe Photoshop manipulation. Through composite images of human figures in motion, I delve into the fluidity of time and space, creating captivating narratives on a single page.",
             "dateCompleted": "020723",
-            "technologies": 0,
+            "tools": ["DSLR", "Photoshop"],
             "imgLinks": ["https://firebasestorage.googleapis.com/v0/b/spec-scripts.appspot.com/o/Composite_Image_Print_Henry_Osterweis.jpg?alt=media&token=88aaefa9-a890-499c-b1eb-1127b17ee1bb"]
         },
     ]
@@ -74,31 +72,34 @@ const Page = () => {
 
     return (
         <div className="p-24 text-3xl max-sm:text-xl max-sm:p-10">
-            {visible ? <button href={"/"} className="text-3xl hover:underline">Back<span className="inline-flex hover:underline" onClick={() => setVisible((prevVisible) => !prevVisible)}><svg className="with-icon_icon__MHUeb" data-testid="geist-icon" fill="none" height="40" shapeRendering="geometricPrecision" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" width="40" style={{color:"currentColor", width:"30px", height:"30px"}}><path d="M7 17L17 7"></path><path d="M7 7h10v10"></path></svg></span></button>
-                     : <HomeLink /> }
+            {
+                visible 
+                ? <button href={"/"} className="text-3xl hover:underline">Back<span className="inline-flex hover:underline" onClick={() => setVisible(false)}><svg className="with-icon_icon__MHUeb" data-testid="geist-icon" fill="none" height="40" shapeRendering="geometricPrecision" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" width="40" style={{color:"currentColor", width:"30px", height:"30px"}}><path d="M7 17L17 7"></path><path d="M7 7h10v10"></path></svg></span></button>
+                : <HomeLink /> 
+            }
             <br></br><br></br>
             <h1 className="text-5xl">{"Creative Portfolio"}</h1>
             <br></br>
             {visible 
             ?
                 <div className="">
-                    <div className="flex gap-10 max-md:flex-col max-sm:gap-4">
-                        <Image
+                    <div className="flex gap-14 max-md:flex-col max-sm:gap-4">
+                        <img
                             src={selectedProject.imgLinks.length > 0 ? selectedProject.imgLinks[0] : ""}
-                            width={500}
-                            height={500}
-                            priority={false}
-                            className="border-4 border-black"
+                            className="border-4 border-black h-96 max-md:h-auto"
                             alt="portfolio image"
                         />
-                        <div>
-                            <div className="text-5xl font-extrabold mb-2 max-sm:text-3xl">&quot;{selectedProject.title}&quot;</div>
-                            <p>Completed in {months[selectedProject.dateCompleted.substring(1, 2) - 1]} 20{selectedProject.dateCompleted.substring(4, 6)}</p>
-                            <div>{selectedProject.statement}</div>
+                        <div className="flex flex-col gap-2">
+                            <div className="text-5xl font-extrabold max-sm:text-3xl max-sm:text-wrap -left-7 relative max-md:left-0">&quot;{selectedProject.title}&quot;</div>
+                            <p className="left-4 text-3xl max-sm:text-2xl">Completed in {months[selectedProject.dateCompleted.substring(1, 2) - 1]} 20{selectedProject.dateCompleted.substring(4, 6)}</p>
+                            <div className="text-xl overflow-scroll">{selectedProject.statement}</div>
+                            <div className="flex text-xl gap-4 max-sm:text-sm max-sm:flex-wrap">
+                                {selectedProject.tools.map((tool, index) => (
+                                    <div key={index} className="border-2 border-black p-2 text-nowrap">{tool}</div>
+                                ))}
+                            </div>
                         </div>
                     </div>
-                    <br></br>
-                    <button className="hover:underline" onClick={() => setVisible((prevVisible) => !prevVisible)}>Back</button>
                 </div>
             :
                 <div 
