@@ -2,6 +2,7 @@
 import HomeLink from "@/components/HomeLink";
 import PageWrapper from "@/components/PageWrapper";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 
 const Page = () => {
@@ -72,7 +73,12 @@ const Page = () => {
     }
 
     return (
-        <PageWrapper pageTitle={"Creative Portfolio"}>
+        <div className="p-24 text-3xl max-sm:text-xl max-sm:p-10">
+            {visible ? <button href={"/"} className="text-3xl hover:underline">Back<span className="inline-flex hover:underline" onClick={() => setVisible((prevVisible) => !prevVisible)}><svg className="with-icon_icon__MHUeb" data-testid="geist-icon" fill="none" height="40" shapeRendering="geometricPrecision" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" width="40" style={{color:"currentColor", width:"30px", height:"30px"}}><path d="M7 17L17 7"></path><path d="M7 7h10v10"></path></svg></span></button>
+                     : <HomeLink /> }
+            <br></br><br></br>
+            <h1 className="text-5xl">{"Creative Portfolio"}</h1>
+            <br></br>
             {visible 
             ?
                 <div className="">
@@ -113,7 +119,7 @@ const Page = () => {
             }
             <br></br><br></br>
             <p>Need design work done? Reach out at henryosterweis@gmail.com</p>
-        </PageWrapper>
+        </div>
     );
 }
  

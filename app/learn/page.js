@@ -1,8 +1,10 @@
+import PageWrapper from "@/components/PageWrapper";
+
 const Page = () => {
     return (
-        <div>
-            
-        </div>
+        <PageWrapper pageTitle={"Completed Classes"}>
+
+        </PageWrapper>
     );
 }
  
