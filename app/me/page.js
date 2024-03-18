@@ -1,12 +1,9 @@
 import HomeLink from "@/components/HomeLink";
+import PageWrapper from "@/components/PageWrapper";
 
 const Page = () => {
     return (
-        <div className="p-24 text-3xl max-sm:text-xl max-sm:p-10">
-            <HomeLink />
-            <br></br><br></br>
-            <h1 className="text-5xl">Welcome</h1>
-            <br></br>
+        <PageWrapper pageTitle={"Welcome"}>
             <p>
                 My name is Henry Osterweis. I am pursuing my Bachelor of Science in 
                 Integrated Design and Media at <span className="text-purple-700">New York University </span>
@@ -20,7 +17,7 @@ const Page = () => {
             <p>
                 You can reach me at <button>henryosterweis@gmail.com</button>
             </p>
-        </div>
+        </PageWrapper>
     );
 }
  

@@ -1,4 +1,5 @@
 import HomeLink from "@/components/HomeLink";
+import PageWrapper from "@/components/PageWrapper";
 
 const Page = () => {
     const projectObjects = [
@@ -22,11 +23,7 @@ const Page = () => {
     const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
     return (
-        <div className="p-24 text-3xl max-sm:text-xl max-sm:p-10">
-            <HomeLink />
-            <br></br><br></br>
-            <h1 className="text-5xl">Freelance Work</h1>
-            <br></br>
+        <PageWrapper pageTitle={"Freelance Work"}>
             <div className="flex flex-col gap-8">
                 {projectObjects.map((project, index) => (
                     <div key={index} className="flex gap-10 max-sm:flex-col max-sm:gap-2">
@@ -48,7 +45,7 @@ const Page = () => {
             </div>
             <br></br><br></br>
             <p>Need software work done? Reach out at henryosterweis@gmail.com</p>
-        </div>
+        </PageWrapper>
     );
 }
  

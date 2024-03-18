@@ -12,7 +12,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
     return (
-        <html lang="en">
+        <html lang="en" style={{ backgroundColor: "rgb(255, 254, 250)" }}>
             <body className={GeistMono.className}>
                 {children}
             </body>
