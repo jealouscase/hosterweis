@@ -83,9 +83,10 @@ const Page = () => {
                             height={500}
                             priority={false}
                             className="border-4 border-black"
+                            alt="portfolio image"
                         />
                         <div>
-                            <div className="text-5xl font-extrabold mb-2 max-sm:text-3xl">"{selectedProject.title}"</div>
+                            <div className="text-5xl font-extrabold mb-2 max-sm:text-3xl">&quot;{selectedProject.title}&quot;</div>
                             <p>Completed in {months[selectedProject.dateCompleted.substring(1, 2) - 1]} 20{selectedProject.dateCompleted.substring(4, 6)}</p>
                             <div>{selectedProject.statement}</div>
                         </div>
