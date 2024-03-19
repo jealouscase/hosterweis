@@ -7,7 +7,7 @@ const Page = () => {
             <p>
                 My name is Henry Osterweis. I am pursuing my Bachelor of Science in 
                 Integrated Design and Media at <span className="text-purple-700">New York University </span>
-                Tandon School of Engineering.
+                Tandon School of Engineering as part of the Class of 2025.
             </p>
             <br></br>
             <p>

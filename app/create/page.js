@@ -1,6 +1,5 @@
 "use client"
 import HomeLink from "@/components/HomeLink";
-import Image from "next/image";
 import { useState } from "react";
 
 const Page = () => {
@@ -13,6 +12,14 @@ const Page = () => {
         //     "tools": [""],
         //     "imgLinks": [""]
         // },
+        {
+            "title": "3D Modeled Chess Pieces",
+            "concepts": "3D modeling, UVs, & Playblast",
+            "statement": "I created a set of six chess pieces. I gathered references to guide my modeling process and selected the pieces to focus on. Using Maya, I carefully crafted each piece, paying attention to detail and functionality. Through iterative feedback, I refined the designs to ensure they were visually appealing and true to traditional chess aesthetics. The final result is a polished set of chess pieces ready for use in digital display.",
+            "dateCompleted": "031823",
+            "tools": ["Autodesk Maya"],
+            "imgLinks": ["https://firebasestorage.googleapis.com/v0/b/hosterweis.appspot.com/o/OsterweisH_01318_TT.mov?alt=media&token=5c3dbaf5-cff7-4e0e-81ab-51cbe9d978f2"]
+        },
         {
             "title": "MTurk Worker Visualization Chrome Extension",
             "concepts": "Data viz, Prototyping, & User surveys",
