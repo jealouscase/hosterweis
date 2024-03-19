@@ -14,12 +14,47 @@ const Page = () => {
         //     "imgLinks": [""]
         // },
         {
+            "title": "MTurk Worker Visualization Chrome Extension",
+            "concepts": "Data viz, Prototyping, & User surveys",
+            "statement": "I explored the experiences of workers on platforms like Amazon Mechanical Turk (MTurk) and Prolific, aiming to shed light on their challenges and aspirations. Through the development of a Google Chrome extension, I sought to facilitate communication and collaboration among these workers, fostering a sense of solidarity in a digital landscape often marked by isolation. By conducting surveys and interviews, I delved into the lived realities of these workers, navigating a journey of discovery and iteration. As I engaged with the MTurk and Prolific communities, I strived to amplify their voices and empower them through collective action and transparency, envisioning a future where digital labor is recognized and valued.",
+            "dateCompleted": "120723",
+            "tools": ["Chrome Extension", "Prolific", "Presentation"],
+            "imgLinks": ["https://firebasestorage.googleapis.com/v0/b/hosterweis.appspot.com/o/ab45ff1e78abc4c0f5dde3b63adfe4e2.png?alt=media&token=e5c230a2-d458-4c24-ace2-60336a8f1b86"]
+        },
+        {
+            "title": "Trader Joe's Package Redesign",
+            "concepts": "Product packaging design & 3D",
+            "statement": "I undertook the challenge of redesigning the packaging for Trader Joe's microwave rice. With a focus on enhancing both the visual appeal and functionality of the packaging, I opted for a clean and minimalist design that aligns with Trader Joe's brand ethos. Leveraging Adobe Dimension, I meticulously crafted a 3D image of the redesigned packaging, featuring vibrant colors and engaging graphics to capture the attention of shoppers. Additionally, I incorporated user-friendly elements such as easy-to-read cooking instructions and a resealable closure for convenience and freshness. Looking beyond the immediate product, I envisioned how this redesign could extend across Trader Joe's line of microwaveable grains, ensuring a cohesive and recognizable brand identity on the shelves. Through thoughtful consideration of both aesthetics and practicality, I aimed to elevate the overall experience for consumers engaging with Trader Joe's microwave rice.",
+            "dateCompleted": "113023",
+            "tools": ["Adobe Dimension"],
+            "imgLinks": ["https://firebasestorage.googleapis.com/v0/b/hosterweis.appspot.com/o/Screenshot%202023-11-30%20at%2010.06.25%E2%80%AFAM.png?alt=media&token=b7659e5c-963c-448f-90f9-11d15741b472",
+                         "https://firebasestorage.googleapis.com/v0/b/hosterweis.appspot.com/o/Screenshot%202023-11-30%20at%2010.06.52%E2%80%AFAM.png?alt=media&token=fb38a6b9-4dcc-4aa4-9561-699f82404e23"]
+        },
+        {
+            "title": "Architecture Font and Specimen",
+            "concepts": "Typography & graphic design",
+            "statement": "I created a unique custom typeface using a font editor. Inspired by the dynamic interplay between geometric forms and organic shapes, I aimed to craft a typeface that struck a balance between modernity and whimsy. Drawing from various influences such as letters on the street, natural elements, and architecture, I envisioned a typeface that exuded character and versatility. As I embarked on this creative journey, I explored the intricate details of letterforms, experimenting with proportions, curves, and terminals to achieve a harmonious and distinctive aesthetic. Looking ahead, I considered the possibility of utilizing this custom typeface for my final project, recognizing the potential for it to imbue my designs with a unique and personal touch.",
+            "dateCompleted": "112123",
+            "tools": ["Glyphs Mini 2"],
+            "imgLinks": ["https://firebasestorage.googleapis.com/v0/b/hosterweis.appspot.com/o/Henry_Osterweis_Font_Specimen.png?alt=media&token=72034837-2eae-4c7e-9df1-aac9a74c4a61"]
+        },
+        {
+            "title": "Relief for Lahaina T-Shirt",
+            "concepts": "Graphic design, typography, & client relations",
+            "statement": "I designed a T-shirt aimed at aiding the victims of the forest fires in Lahaina, Hawaii, in August. Collaborating with Crunch, a company dedicated to providing relief, and Mendocino Farms, the caterers for the fundraising event, I aimed to create a design that not only raises awareness but also encourages support through donations and sales. Mindful of the practical considerations outlined by our creative director, Jason Engdahl, I crafted a design that resonates with the target audience, ensuring it's visually appealing and likely to be worn beyond the event. While limited to three colors, I sought to convey a message of solidarity and hope, paying tribute to the resilience of those affected by the fires. By leveraging design as a tool for advocacy and support, I hope to make a meaningful impact in assisting the community of Lahaina during this challenging time.",
+            "dateCompleted": "110423",
+            "tools": ["Illustrator", "Photoshop"],
+            "imgLinks": ["https://firebasestorage.googleapis.com/v0/b/hosterweis.appspot.com/o/lahaina_shirt_final.png?alt=media&token=ebb15583-6411-4d38-9557-e734d7a2e01a"]
+        },
+        {
             "title": "Deftones Digital Magazine",
             "concepts": "Publication design & typography",
-            "statement": "For my latest project, I delved into the realm of music publication design, crafting a magazine cover and two double spread layouts centered around the band Deftones. Channeling my passion for both graphic design and music, I meticulously curated each element, from headlines to body text, aiming to capture the essence of the band's aesthetic while adhering to the principles of strong layout design. Drawing inspiration from renowned music publications like Rolling Stone and Decibel, I sought to infuse my designs with a balance of visual intrigue and informative content, employing a consistent grid structure to ensure cohesion across all spreads. By immersing myself in the nuances of magazine layout and typography, I aimed to create an immersive reading experience that pays homage to the band's legacy and resonates with music enthusiasts.",
+            "statement": "I delved into the realm of music publication design, crafting a magazine cover and two double spread layouts centered around the band Deftones. Channeling my passion for both graphic design and music, I meticulously curated each element, from headlines to body text, aiming to capture the essence of the band's aesthetic while adhering to the principles of strong layout design. Drawing inspiration from renowned music publications like Rolling Stone and Decibel, I sought to infuse my designs with a balance of visual intrigue and informative content, employing a consistent grid structure to ensure cohesion across all spreads. By immersing myself in the nuances of magazine layout and typography, I aimed to create an immersive reading experience that pays homage to the band's legacy and resonates with music enthusiasts.",
             "dateCompleted": "103123",
-            "tools": ["Illustrator", "InDesign", "Photoshop"],
-            "imgLinks": [""]
+            "tools": ["InDesign", "Photoshop"],
+            "imgLinks": ["https://firebasestorage.googleapis.com/v0/b/hosterweis.appspot.com/o/rolling-stone-mag-final-1.png?alt=media&token=5cf2325b-2c86-4063-a0c4-9e25630f2c35",
+                         "https://firebasestorage.googleapis.com/v0/b/hosterweis.appspot.com/o/rolling-stone-mag-final-2.png?alt=media&token=33dbae50-3faf-44d5-832f-706ef07a1705",
+                         "https://firebasestorage.googleapis.com/v0/b/hosterweis.appspot.com/o/rolling-stone-mag-final-4.png?alt=media&token=31e2f215-0948-44a0-ac5d-98f1ef8bb12c"]
         },
         {
             "title": "Off The Bridge Bike Shop Sign",
@@ -27,23 +62,16 @@ const Page = () => {
             "statement": `In developing the signage for Off the Bridge bike shop in Chinatown, Manhattan, I took inspiration from the neighborhood's eclectic visual landscape and Qian's vision for the store. By critiquing and analyzing two relevant examples and exploring Qian's references, "1984" and "Idiocracy," I gained valuable insights. Working closely with the client, I crafted a scale mock-up that goes beyond traditional signage, incorporating elements like window grates and sidewalk installations. My design aims to enhance visibility and capture the essence of the neighborhood while also providing auxiliary assets such as a logo and website. Ultimately, my goal is to create a standout presence for Off the Bridge on Canal Street, appealing to both locals and passersby.`,
             "dateCompleted": "100323",
             "tools": ["Sketching", "Adobe Illustrator"],
-            "imgLinks": [""]
+            "imgLinks": ["https://firebasestorage.googleapis.com/v0/b/hosterweis.appspot.com/o/off_the_bridge_0.png?alt=media&token=bf377c77-f10b-4d34-afc8-6d1aa1fd782d",
+                         "https://firebasestorage.googleapis.com/v0/b/hosterweis.appspot.com/o/off_the_bridge_1.png?alt=media&token=b95a6e59-2887-4e02-8be4-812e982edd86"]
         },
         {
             "title": "Affordable Healthcare Political Poster",
             "concepts": "Graphic design & political statements",
-            "statement": "For my inaugural political poster project, I chose to advocate for affordable healthcare for all in New York City. Through meticulous research and exploration of other designers' approaches to this issue, I discovered the potent symbolism associated with a raised fist, signifying power and unity, and a vaccine, symbolizing healthcare access and protection. My poster features a striking image of a fist reaching for a vaccine, encapsulating the urgency and importance of equitable healthcare. I deliberately avoided clichés and opted for a bold yet straightforward design, aiming to resonate with viewers and ignite conversations about this pressing social issue.",
+            "statement": "I chose to advocate for affordable healthcare for all in New York City. Through meticulous research and exploration of other designers' approaches to this issue, I discovered the potent symbolism associated with a raised fist, signifying power and unity, and a vaccine, symbolizing healthcare access and protection. My poster features a striking image of a fist reaching for a vaccine, encapsulating the urgency and importance of equitable healthcare. I deliberately avoided clichés and opted for a bold yet straightforward design, aiming to resonate with viewers and ignite conversations about this pressing social issue.",
             "dateCompleted": "091923",
             "tools": ["Photography", "Adobe Illustrator"],
-            "imgLinks": [""]
-        },
-        {
-            "title": "MTurk Worker Visualization Chrome Extension",
-            "concepts": "Data viz, Prototyping, & User surveys",
-            "statement": "In my project, I explored the experiences of workers on platforms like Amazon Mechanical Turk (MTurk) and Prolific, aiming to shed light on their challenges and aspirations. Through the development of a Google Chrome extension, I sought to facilitate communication and collaboration among these workers, fostering a sense of solidarity in a digital landscape often marked by isolation. By conducting surveys and interviews, I delved into the lived realities of these workers, navigating a journey of discovery and iteration. As I engaged with the MTurk and Prolific communities, I strived to amplify their voices and empower them through collective action and transparency, envisioning a future where digital labor is recognized and valued.",
-            "dateCompleted": "050923",
-            "tools": ["Chrome Extension", "Prolific", "Presentation"],
-            "imgLinks": [""]
+            "imgLinks": ["https://firebasestorage.googleapis.com/v0/b/hosterweis.appspot.com/o/healthcare_poster.png?alt=media&token=c46b13b9-04fe-4d44-85e9-6bb564e7aa13"]
         },
         {
             "title": "Keep Moving",
@@ -120,12 +148,12 @@ const Page = () => {
                     <div className="flex gap-14 max-md:flex-col max-sm:gap-4">
                         <img
                             src={selectedProject.imgLinks.length > 0 ? selectedProject.imgLinks[0] : ""}
-                            className="border-4 border-black max-md:h-auto w-[520px] h-auto"
+                            className="border-4 border-black w-[520px] h-max"
                             alt="portfolio image"
                         />
                         <div className="flex flex-col gap-2">
-                            <div className="text-5xl font-extrabold max-sm:text-3xl max-sm:text-wrap -left-7 relative max-md:left-0 text-nowrap">&quot;{selectedProject.title}&quot;</div>
-                            <p className="left-4 text-3xl max-sm:text-2xl">Completed in {months[selectedProject.dateCompleted.substring(1, 2) - 1]} 20{selectedProject.dateCompleted.substring(4, 6)}</p>
+                            <div className="text-5xl font-extrabold max-sm:text-3xl max-sm:text-wrap relative max-md:left-0">&quot;{selectedProject.title}&quot;</div> {/* -left-7  */} 
+                            <p className="left-4 text-3xl max-sm:text-2xl">Completed in {months[selectedProject.dateCompleted.substring(0, 2) - 1]} 20{selectedProject.dateCompleted.substring(4, 6)}</p>
                             <div className="text-xl overflow-scroll h-40 max-md:h-full mb-4">{selectedProject.statement}</div>
                             <div className="flex text-xl gap-4 max-sm:text-sm max-sm:flex-wrap">
                                 {selectedProject.tools.map((tool, index) => (
