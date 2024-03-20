@@ -4,7 +4,7 @@ import PageWrapper from "@/components/PageWrapper";
 const Page = () => {
     const projectObjects = [
         {
-            "name": "File Dashboard for J.C. Kellogg Foundation [Freelance] [Commissioned]",
+            "name": "File Dashboard for J.C. Kellogg Foundation",
             "start_month": 8,
             "end_month": 11,
             "year": 2023,
@@ -12,7 +12,7 @@ const Page = () => {
             "categories": ["Full-stack", "Client Relations", "Authentication"],
         },
         {
-            "name": "The Lipstick Artist Portfolio Page [Freelance] [Commissioned]",
+            "name": "The Lipstick Artist Portfolio Page",
             "start_month": 7,
             "end_month": 8,
             "year": 2022,

@@ -31,7 +31,7 @@ const Page = () => {
             "start_month": 8,
             "end_month": 11,
             "year": 2023,
-            "description": "Build a File Storage Dashboard website with LEO Designs Studio for J.C. Kellogg Foundation, using Firebase, Cloud Functions and Github. Managed the entire project from client engagement to deployment.",
+            "description": "Built a File Storage Dashboard website with LEO Designs Studio for J.C. Kellogg Foundation, using Firebase, Cloud Functions and Github. Managed the entire project from client engagement to deployment.",
             "categories": ["Full-stack", "Client Relations", "Authentication"],
         },
         {

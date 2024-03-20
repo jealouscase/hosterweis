@@ -16,7 +16,7 @@ const Page = () => {
             "title": "3D Modeled Chess Pieces",
             "concepts": "3D modeling, UVs, & Playblast",
             "statement": "I created a set of six chess pieces. I gathered references to guide my modeling process and selected the pieces to focus on. Using Maya, I carefully crafted each piece, paying attention to detail and functionality. Through iterative feedback, I refined the designs to ensure they were visually appealing and true to traditional chess aesthetics. The final result is a polished set of chess pieces ready for use in digital display.",
-            "dateCompleted": "031823",
+            "dateCompleted": "031824",
             "tools": ["Autodesk Maya"],
             "imgLinks": ["https://firebasestorage.googleapis.com/v0/b/hosterweis.appspot.com/o/83c112fc9d574e4ae2836a8a6bdf3e29.png?alt=media&token=6feca431-5632-43ea-9e40-cb2d627105aa"]
         },
