@@ -1,6 +1,6 @@
 "use client"
 import HomeLink from "@/components/HomeLink";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Page = () => {
     const projectObjects = [
@@ -38,7 +38,7 @@ const Page = () => {
                          "https://firebasestorage.googleapis.com/v0/b/hosterweis.appspot.com/o/Screenshot%202023-11-30%20at%2010.06.52%E2%80%AFAM.png?alt=media&token=fb38a6b9-4dcc-4aa4-9561-699f82404e23"]
         },
         {
-            "title": "Architecture Font and Specimen",
+            "title": "Architecture Type and Font Specimen",
             "concepts": "Typography & graphic design",
             "statement": "I created a unique custom typeface using a font editor. Inspired by the dynamic interplay between geometric forms and organic shapes, I aimed to craft a typeface that struck a balance between modernity and whimsy. Drawing from various influences such as letters on the street, natural elements, and architecture, I envisioned a typeface that exuded character and versatility. As I embarked on this creative journey, I explored the intricate details of letterforms, experimenting with proportions, curves, and terminals to achieve a harmonious and distinctive aesthetic. Looking ahead, I considered the possibility of utilizing this custom typeface for my final project, recognizing the potential for it to imbue my designs with a unique and personal touch.",
             "dateCompleted": "112123",
@@ -135,17 +135,34 @@ const Page = () => {
     const [selectedProject, setSelectedProject] = useState({})
     
     const handleButtonClick = (project) => {
-        setSelectedProject(project)
-        setVisible((prevVisible) => !prevVisible)
-    }
+        if (visible) {
+            setVisible(false);
+        } else {
+            setSelectedProject(project);
+            setVisible(true);
+        }
+    };
+
+    const handleBackButtonClick = (e) => {
+        e.stopPropagation();
+        setVisible(false);
+    };
 
     return (
         <div className="p-24 text-3xl max-sm:text-xl max-sm:p-10">
-            {
-                visible 
-                ? <button href={"/"} className="text-3xl hover:underline">Back<span className="inline-flex hover:underline" onClick={() => setVisible(false)}><svg className="with-icon_icon__MHUeb" data-testid="geist-icon" fill="none" height="40" shapeRendering="geometricPrecision" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" width="40" style={{color:"currentColor", width:"30px", height:"30px"}}><path d="M7 17L17 7"></path><path d="M7 7h10v10"></path></svg></span></button>
-                : <HomeLink /> 
-            }
+            {visible ? (
+                <button href={"/"} className="text-3xl hover:underline" onClick={handleBackButtonClick}>
+                    Back
+                    <span className="inline-flex hover:underline">
+                        <svg className="with-icon_icon__MHUeb" data-testid="geist-icon" fill="none" height="40" shapeRendering="geometricPrecision" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" width="40" style={{color:"currentColor", width:"30px", height:"30px"}}>
+                            <path d="M7 17L17 7"></path>
+                            <path d="M7 7h10v10"></path>
+                        </svg>
+                    </span>
+                </button>
+            ) : (
+                <HomeLink />
+            )}
             <br></br><br></br>
             <h1 className="text-5xl">{"Creative Portfolio"}</h1>
             <br></br>
