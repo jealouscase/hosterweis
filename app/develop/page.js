@@ -18,6 +18,7 @@ const Page = () => {
         //     "description": "",
         //     "categories": [""],
         // },
+        // Neural Network project, three.js, web automation, Revit
         {
             "name": "spec.network",
             "start_month": 9,
@@ -90,7 +91,7 @@ const Page = () => {
         <PageWrapper pageTitle={"Projects"}>
             <div className="flex flex-col gap-8">
                 {projectObjects.map((project, index) => (
-                    <div key={index} className="flex gap-10 max-sm:flex-col max-sm:gap-2">
+                    <div key={index} className="flex gap-10 max-sm:flex-col max-sm:gap-2 border-b-2 border-black pb-8">
                         <p className="font-bold">{projectObjects.length - index - 1 < 10 ? 0 : ""}{projectObjects.length - index - 1}</p>
                         <div className="flex flex-col gap-4">
                             <p className=" w-80">{project.name}</p>
